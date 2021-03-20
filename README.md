@@ -21,9 +21,10 @@ cd paint_example &&
 npm init &&
 npm install --save-dev @wasm-tool/wasm-pack-plugin html-webpack-plugin webpack webpack-cli webpack-dev-server &&
 cargo init --lib &&
+cargo add js-sys wasm-bindgen web-sys &&
 touch index.js &&
 touch index.html &&
 touch webpack.config.js
 ```
 Then copied the old `lib.rs`, `index.js` and `index.html`
-and used my own `webpack.config.js` file.
+and used my own `webpack.config.js` file. Then edited `Cargo.toml` with by adding the `[lib]` section and copied the `dependencies.web-sys` features from the original project over and added my `script` entry in `package.json`
