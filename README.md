@@ -26,5 +26,4 @@ touch index.js &&
 touch index.html &&
 touch webpack.config.js
 ```
-Then copied the old `lib.rs`, `index.js` and `index.html`
-and used my own `webpack.config.js` file. Then edited `Cargo.toml` with by adding the `[lib]` section and copied the `dependencies.web-sys` features from the original project over and added my `script` entry in `package.json`
+Then copied the old contents of `lib.rs`, `index.js` and `index.html` over and used my own `webpack.config.js` file. Then edited `Cargo.toml` by adding the `[lib]` section and copied the `dependencies.web-sys` features from the original project over and added my `script` entry in `package.json`
